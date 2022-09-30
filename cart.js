@@ -19,7 +19,13 @@ var cart = {
   },
 
   // (B3) BORRAR TODO EL CARRITO
-  nuke : () => { if (confirm("Empty cart?")) {
+  nuke : () => { if (Swal.fire({
+    title: "Vaciar el carrito",
+    text: "¿Esta seguro? Eliminará todos elementos del carrito.",
+    icon: "error",
+    confirmButtonText: ' ACEPTAR '
+  })
+  ) {
     cart.items = {};
     localStorage.removeItem("cart");
     cart.list();
@@ -142,7 +148,12 @@ var cart = {
     // MANDAR EMAIL
     // GUARDAR EN DATABASE
     // PAGO
-    alert("Proximamente!!!");
+    Swal.fire({
+      title: "Correcto!",
+      text: "¿Esta seguro? pasaremos a la sección de pago.",
+      icon: "success",
+      confirmButtonText: ' OK '
+    })
 
     /*
     var data = new FormData();
