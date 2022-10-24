@@ -21,7 +21,7 @@ var cart = {
   // (B3) BORRAR TODO EL CARRITO
   nuke : () => { if (Swal.fire({
     title: "Vaciar el carrito",
-    text: "¿Esta seguro? Eliminará todos elementos del carrito.",
+    text: "Elimina todos elementos del carrito.",
     icon: "error",
     confirmButtonText: ' ACEPTAR '
   })
@@ -71,7 +71,7 @@ var cart = {
     // (D2) CARRO VACIO
     if (empty) {
       item = document.createElement("div");
-      item.innerHTML = "Cart is empty";
+      item.innerHTML = "Carrito Vacio";
       cart.hItems.appendChild(item);
     }
 
@@ -142,30 +142,12 @@ var cart = {
 
   // (H) CHECKOUT
   checkout : () => {
-      // LISTADO DE UPCOMING FEATURES
-    // ENVIAR DATA AL SERVER
-    // CHEQUEOS
-    // MANDAR EMAIL
-    // GUARDAR EN DATABASE
-    // PAGO
     Swal.fire({
       title: "Correcto!",
-      text: "¿Esta seguro? pasaremos a la sección de pago.",
+      text: "Sección de pago. Proximamente",
       icon: "success",
       confirmButtonText: ' OK '
     })
-
-    /*
-    var data = new FormData();
-    data.append("cart", JSON.stringify(cart.items));
-    data.append("products", JSON.stringify(products));
-
-    fetch("SERVER-SCRIPT", { method:"POST", body:data })
-    .then(res=>res.text()).then((res) => {
-      console.log(res);
-    })
-    .catch((err) => { console.error(err); });
-    */
   }
 };
 window.addEventListener("DOMContentLoaded", cart.init);

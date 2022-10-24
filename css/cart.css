@@ -37,7 +37,7 @@ h1 {
   border-radius: 5px;
   text-align: center;
 }
-.p-img { max-width: 150px; }
+.p-img { max-width: 150px; height: 150px; }
 .p-name, .p-price { font-weight: 700; }
 .p-name, .p-desc, .p-price { margin: 5px 0; }
 .p-name {
