@@ -4,6 +4,7 @@ var cart = {
   hItems : null,    // cantidad actual en el carrito html
   items : {},       // items en el carrito
   iURL : "images/", // carpeta de imgs de productos
+  // var : products = 'products.JSON',
 
   // (B) CARRITO LOCALSTORE
   // (B1) GUARDAR CARRITO ACTUAL EN LOCALSTORAGE

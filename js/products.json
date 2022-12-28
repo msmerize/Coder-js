@@ -1,0 +1,6 @@
+[
+    {"id":122,"name":"Camisa","desc":"Camisa común.","img":"camisa.jpg","price":5800},
+    {"id":123,"name":"Zapatos","desc":"Zapatos Melacoste.","img":"zapatos.jpg","price":13800},
+    {"id":124,"name":"Corbata","desc":"Surtido de corbatas.","img":"corbata.jpg","price":4000},
+    {"id":125,"name":"Pantalon","desc":"Pantalon de vestir.","img":"pantalon.jpg","price":18000}
+]
